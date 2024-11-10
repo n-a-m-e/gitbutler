@@ -68,7 +68,7 @@ fn main() {
                     // the binary is rebuilt. To counter that, use a git-credential based implementation.
                     // This isn't an issue for actual release build (i.e. nightly, production),
                     // hence the specific condition.
-                    if cfg!(debug_assertions) && cfg!(target_os = "macos") {
+                    if true {
                         gitbutler_secret::secret::git_credentials::setup().ok();
                     }
 
